@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/pauhori/Documents/9SEM/TRADING/004_DL_MLOPS/mlruns/748341155341274544/ca04bdc0dd4f48d8aaa42759b33f3aed/artifacts
+end_time: 1762840918700
+entry_point_name: ''
+experiment_id: '748341155341274544'
+lifecycle_stage: active
+run_id: ca04bdc0dd4f48d8aaa42759b33f3aed
+run_name: redolent-flea-807
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762840910130
+status: 3
+tags: []
+user_id: pauhori

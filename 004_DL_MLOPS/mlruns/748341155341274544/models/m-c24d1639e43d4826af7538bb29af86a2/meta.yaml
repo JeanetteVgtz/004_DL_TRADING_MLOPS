@@ -1,0 +1,10 @@
+artifact_location: file:///Users/pauhori/Documents/9SEM/TRADING/004_DL_MLOPS/mlruns/748341155341274544/models/m-c24d1639e43d4826af7538bb29af86a2/artifacts
+creation_timestamp: 1762840912412
+experiment_id: '748341155341274544'
+last_updated_timestamp: 1762840918694
+model_id: m-c24d1639e43d4826af7538bb29af86a2
+model_type: null
+name: model
+source_run_id: ca04bdc0dd4f48d8aaa42759b33f3aed
+status: 2
+status_message: null
