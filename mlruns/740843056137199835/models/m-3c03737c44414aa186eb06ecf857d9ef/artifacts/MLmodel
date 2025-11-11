@@ -1,0 +1,20 @@
+artifact_path: file:///C:/Users/Jeane/Desktop/ELPROYECTODETRADINGALV/mlruns/740843056137199835/models/m-3c03737c44414aa186eb06ecf857d9ef/artifacts
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.11.3
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.10.19
+mlflow_version: 3.6.0
+model_id: m-3c03737c44414aa186eb06ecf857d9ef
+model_size_bytes: 355867
+model_uuid: m-3c03737c44414aa186eb06ecf857d9ef
+prompts: null
+run_id: 42963fd21e58494e82f0f176e965d429
+utc_time_created: '2025-11-11 18:54:23.567120'
