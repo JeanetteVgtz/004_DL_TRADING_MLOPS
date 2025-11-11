@@ -9,12 +9,10 @@ import pandas as pd
 import yfinance as yf
 import os
 
-print("=== STEP 1: DATA DOWNLOAD AND PREPROCESSING ===")
-
 # -----------------------------
 # 1. Download historical data
 # -----------------------------
-data = yf.download("NVDA", period="15y", progress=False, auto_adjust=False)
+data = yf.download("DIS", period="15y", progress=False, auto_adjust=False)
 data = data.reset_index()
 
 # Flatten MultiIndex if necessary
@@ -47,7 +45,6 @@ print(f"From: {data['date'].min()}  To: {data['date'].max()}")
 # -----------------------------
 # 3. Handle missing values
 # -----------------------------
-print("\n[2/4] Cleaning missing values...")
 data = data.fillna(method="ffill")  # Forward fill
 data = data.fillna(method="bfill")  # Backward fill
 missing = data.isnull().sum().sum()
@@ -56,7 +53,6 @@ print(f"Remaining missing values: {missing}")
 # -----------------------------
 # 4. Chronological split
 # -----------------------------
-print("\n[3/4] Splitting data chronologically...")
 n_rows = len(data)
 train_end = int(n_rows * 0.6)
 test_end = int(n_rows * 0.8)
@@ -72,7 +68,6 @@ print(f"Val:   {len(val)} rows  ({val['date'].min()} → {val['date'].max()})")
 # -----------------------------
 # 5. Save to CSV
 # -----------------------------
-print("\n[4/4] Saving processed files...")
 os.makedirs("data/processed", exist_ok=True)
 
 train.to_csv("data/processed/train_raw.csv", index=False)
