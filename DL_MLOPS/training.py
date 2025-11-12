@@ -59,7 +59,7 @@ val_scaled[features] = scaler.transform(val[features])
 os.makedirs("models", exist_ok=True)
 with open("models/scaler.pkl", "wb") as f:
     pickle.dump(scaler, f)
-print("  ✅ Scaler saved to models/scaler.pkl")
+print("   Scaler saved to models/scaler.pkl")
 
 # ---------------------------------------------------------
 # 4. Create sequences and labels
@@ -149,7 +149,7 @@ print(f"Train Accuracy: {train_acc:.2%}")
 print(f"Val Accuracy:   {val_acc:.2%}")
 print(f"Train Loss:     {train_loss:.4f}")
 print(f"Val Loss:       {val_loss:.4f}")
-print("\n💡 To visualize experiments in MLFlow:")
+print("\n To visualize experiments in MLFlow:")
 print("   > mlflow ui")
 print("   Open http://localhost:5000")
 print("=" * 70)

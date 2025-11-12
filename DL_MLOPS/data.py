@@ -12,7 +12,7 @@ import os
 # -----------------------------
 # 1. Download historical data
 # -----------------------------
-data = yf.download("DIS", period="15y", progress=False, auto_adjust=False)
+data = yf.download("KO", period="15y", progress=False, auto_adjust=False)
 data = data.reset_index()
 
 # Flatten MultiIndex if necessary

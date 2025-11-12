@@ -26,7 +26,7 @@ st.markdown("Visualización automática del drift entre los periodos de entrenam
 # ------------------------------------------------------------
 # RUTAS DE ARCHIVOS
 # ------------------------------------------------------------
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
+DATA_DIR = os.path.join(os.path.dirname(_file_), "data", "processed")
 
 TRAIN_PATH = os.path.join(DATA_DIR, "train_features.csv")
 TEST_PATH = os.path.join(DATA_DIR, "test_features.csv")
@@ -67,7 +67,7 @@ if all(os.path.exists(p) for p in [TRAIN_PATH, TEST_PATH, VAL_PATH]):
         columns=["Feature", "KS p-value (Train vs Test)", "KS p-value (Train vs Val)", "Drift Detected"]
     )
 
-    drift_df["Drift Detected"] = drift_df["Drift Detected"].apply(lambda x: "⚠️ YES" if x else "✅ NO")
+    drift_df["Drift Detected"] = drift_df["Drift Detected"].apply(lambda x: "⚠ YES" if x else "✅ NO")
     st.dataframe(drift_df, use_container_width=True)
 
     # --------------------------------------------------------
@@ -97,8 +97,8 @@ if all(os.path.exists(p) for p in [TRAIN_PATH, TEST_PATH, VAL_PATH]):
     # --------------------------------------------------------
     st.subheader("🧠 Interpretación")
     st.markdown("""
-    - **KS-test p-value < 0.05** indica un cambio estadísticamente significativo.  
-    - Las features marcadas con ⚠️ pueden reflejar:
+    - *KS-test p-value < 0.05* indica un cambio estadísticamente significativo.  
+    - Las features marcadas con ⚠ pueden reflejar:
         - Cambios de régimen de mercado  
         - Incrementos de volatilidad  
         - Cambios estructurales en la serie

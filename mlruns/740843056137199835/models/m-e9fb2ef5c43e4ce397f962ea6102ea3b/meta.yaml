@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Jeane/Desktop/ELPROYECTODETRADINGALV/mlruns/740843056137199835/models/m-e9fb2ef5c43e4ce397f962ea6102ea3b/artifacts
+creation_timestamp: 1762893300741
+experiment_id: '740843056137199835'
+last_updated_timestamp: 1762893312494
+model_id: m-e9fb2ef5c43e4ce397f962ea6102ea3b
+model_type: null
+name: model
+source_run_id: e130c653400d4e0fb8694bb37c535424
+status: 2
+status_message: null

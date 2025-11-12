@@ -153,7 +153,7 @@ def execute_backtest(
     df["portfolio_value"] = portfolio_values
     df["trade_pnl"] = trade_pnls
 
-    print(f"\n✅ Backtest completed successfully.")
+  
     print(f"Final capital: {cash:,.2f}")
     print(f"Net return: {(cash / start_cap - 1) * 100:.2f}%")
     print("=" * 70)
@@ -173,7 +173,7 @@ if __name__ == "__main__":
 
         results, final_cap = execute_backtest(df)
     except Exception as e:
-        print(f"⚠️ Error during backtest: {e}")
+        print(f" Error during backtest: {e}")
 
 
 
