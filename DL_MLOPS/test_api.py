@@ -26,7 +26,7 @@ print("✅", response.json())
 print("\n[3/3] Test prediction...")
 
 # Fake sequence (30 timesteps x 29 features)
-sample_sequence = [[0.1]*29 for _ in range(30)]
+sample_sequence = [[0.1]*32 for _ in range(30)]
 
 payload = {
     "sequence": sample_sequence,
