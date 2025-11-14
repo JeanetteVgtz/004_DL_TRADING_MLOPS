@@ -1,0 +1,14 @@
+pandas
+numpy
+yfinance
+scikit-learn
+tensorflow
+keras
+mlflow
+matplotlib
+seaborn
+scipy
+fastapi
+uvicorn
+pydantic
+requests
